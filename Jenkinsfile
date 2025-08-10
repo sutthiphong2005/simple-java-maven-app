@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:4-eclipse-temurin-21'       
+            image 'maven:4-eclipse-temurin-21'    
         }
     }
     
