@@ -1,3 +1,5 @@
+@Library('github-api-global-lib') _
+
 pipeline {
     agent {
         docker {
