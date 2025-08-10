@@ -8,6 +8,12 @@ pipeline {
     }
     
     stages {
+        stage('Test sharelib') {
+            steps {
+                helloWorldSimple("JUNJAP", "Monday")
+            }
+
+        }
         stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
